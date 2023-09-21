@@ -14,10 +14,10 @@ export const AddCategory = ({onNewCategory}) => {
     onNewCategory(inputValue.trim());
     //limpio desp de agregar
     setInputValue('');
-  }
+  };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label='form'>
       <input
         type="text"
         placeholder="Buscar gif"
